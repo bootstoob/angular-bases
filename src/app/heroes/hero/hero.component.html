@@ -1,0 +1,28 @@
+<p>HOLA hero component</p>
+<h1>ironman</h1>
+
+<dl>
+    <dt>nombre:</dt>
+    <dd>nombre</dd>
+
+    <dt>edad:</dt>
+    <dd>edad</dd>
+
+    <dt>meth:</dt>
+    <dd>{{getHeroDescription()}}</dd>
+
+    <dt>capital:</dt>
+    <dd>{{capitalizedName}}</dd>
+</dl>
+
+
+<button 
+    *ngIf="name!=='Spiderman'"
+    (click)="changeHero()">
+    cambiar nombre
+</button>
+<button 
+*ngIf="age!==25"
+    (click)="changeAge()">
+    cambiar edad
+</button>

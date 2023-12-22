@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-counter',
+  templateUrl: './../../counter.component.html',
+  styleUrls: ['./../../counter.component.css'],
 })
-export class AppComponent {
-
+export class CounterComponent {
   public title:string = 'hola mundo';
   public counter:number = 10;
 
@@ -16,5 +15,5 @@ export class AppComponent {
   resetCounter(){
     this.counter=10;
   }
-  
+
 }
